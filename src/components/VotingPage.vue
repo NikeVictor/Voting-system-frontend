@@ -57,7 +57,14 @@
     });
 
     // Define the desired order of positions
-    const positionOrder = ["President", "Vice President", "Secretary", "finsec", "Other"]; // Add other positions as needed
+    const positionOrder = [
+      "President", 
+      "Vice President", 
+      "Secretary General", 
+      "Financial Secretary", 
+      "DOS",
+      "PRO"
+    ]; // Add other positions as needed
 
     return positionOrder
       .filter(position => grouped[position]) 
