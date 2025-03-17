@@ -37,7 +37,7 @@ export default {
   methods: {
     async checkVotingStatus() {
       try {
-        const response = await axios.get(`http://localhost:3000/check-vote`, {
+        const response = await axios.get(`https://amauwelu-voting-backend.onrender.com/check-vote`, {
       params: {
         phoneNumber: this.phoneNumber
       }

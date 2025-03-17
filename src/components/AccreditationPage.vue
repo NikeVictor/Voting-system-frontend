@@ -69,7 +69,7 @@
         this.successMessage = "";
   
         try {
-          const response = await axios.post("http://localhost:3000/create-user", {
+          const response = await axios.post("https://amauwelu-voting-backend.onrender.com/create-user", {
             name: this.name,
             phoneNumber: this.phoneNumber,
           });

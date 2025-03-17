@@ -8,7 +8,7 @@ const error = ref(null);
 
 const fetchElectionStats = async () => {
   try {
-    const response = await axios.get(`http://localhost:3000/voting-stats`); // Adjust API URL
+    const response = await axios.get(`https://amauwelu-voting-backend.onrender.com/voting-stats`); // Adjust API URL
     electionStats.value = response.data;
     console.log("response", response.data)
   } catch (err) {

@@ -69,7 +69,7 @@
     },
     async created() {
       try {
-        const response = await axios.get("http://localhost:3000/candidates");
+        const response = await axios.get("https://amauwelu-voting-backend.onrender.com/candidates");
         this.candidates = response.data.data;
         console.log("Candidates fetched:", this.candidates);
       } catch (error) {
@@ -90,7 +90,7 @@
         const ids = Object.keys(this.selectedCandidates).map(i => this.selectedCandidates[i]._id)
         console.log("Ids", ids)
         try {
-          await axios.post("http://localhost:3000/vote", {
+          await axios.post("https://amauwelu-voting-backend.onrender.com/vote", {
             phoneNumber: this.phoneNumber,
             candidateIds: ids
           });
