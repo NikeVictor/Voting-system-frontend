@@ -77,6 +77,7 @@ export default {
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
       width: 90%; /* Adjust width for responsiveness */
       max-width: 500px; /* Set a max width */
+      margin-bottom: 300px;
   }
   
   .input-box {
